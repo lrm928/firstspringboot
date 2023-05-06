@@ -1,0 +1,24 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /fsb
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/meeting-manager-hw?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
+    username: root
+    password: lrm928@2022
+  jpa:
+    database: MYSQL
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: none
+
+
+student :
+  name: dev
+  age: 18
+  hobby: [eat,play,read]
+

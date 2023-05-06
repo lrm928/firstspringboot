@@ -1,0 +1,18 @@
+{
+	"_comment": "都是可选项,其中opt范围：EQ-等于(默认值), NE-不等于, LIKE-模糊, GT-大于, LT-小于, GTE-大于等于, LTE-小于等于",
+	"pageNum": 1,
+	"pageSize": 3,
+	"whereList": [{
+		"key": "createTime",
+		"opt": "gte",
+		"val": "2023-05-01 09:00"
+	},{
+		"key": "name",
+		"opt": "LIKE",
+		"val": "张"
+	}],
+	"order": {
+		"key": "age",
+		"val": "desc"
+	}
+}
