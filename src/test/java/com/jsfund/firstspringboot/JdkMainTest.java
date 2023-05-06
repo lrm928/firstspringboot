@@ -46,7 +46,39 @@ public class JdkMainTest {
         //testLocalDateTime();
         //testOptional();
         //testFunction();
-        testStream();
+        //testStream();
+        testLambda();
+    }
+
+    /***
+     * Lambda表达式的应用场景：任何有函数式接口的地方-只有一个抽象方式的接口就是函数式接口
+     */
+    private static void testLambda(){
+        //匿名内部类线程实现试
+//        new Thread(new Runnable(){
+//            @Override
+//            public void run() {
+//                System.out.println("匿名内部类线程实现方式");
+//            }
+//        }).start();
+
+        //Lambda表达式线程实现方式
+        new Thread(()->{System.out.println("Lambda表达式线程实现方式");}).start();
+
+        List<String> list = Arrays.asList("java","python","scala","javascript");
+
+        //普通匿名内部类方式
+//        Collections.sort(list, new Comparator<String>() {
+//            @Override
+//            public int compare(String o1, String o2) {
+//                return o1.length() - o2.length();
+//            }
+//        });
+
+        //Lambda方式
+        Collections.sort(list,(a,b) -> a.length() - b.length());
+        list.forEach(System.out::println);
+
     }
 
     private static void testStream(){
