@@ -29,6 +29,12 @@ public class BuildQueryTest {
         condition1.setVal("9");
         whereList.add(condition1);
 
+        AttributeBean condition2 = new AttributeBean();
+        condition2.setKey("name");
+        condition2.setOpt("like");
+        condition2.setVal("阳");
+        whereList.add(condition2);
+
         query.setWhereList(whereList);
 
         AttributeBean order = new AttributeBean();
