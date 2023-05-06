@@ -33,7 +33,7 @@ public class BuildQueryTest {
 
         AttributeBean order = new AttributeBean();
         order.setKey("age");
-        order.setVal("desc");
+        order.setVal("desc"); //不传默认为asc
 
         query.setOrder(order);
 
