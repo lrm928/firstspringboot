@@ -6,17 +6,19 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/jsfund?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&useSSL=false
+    url: jdbc:mysql://127.0.0.1:3306/meeting-manager-hw?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
     username: root
-    password: lrm928@2019
-
+    password: lrm928@2022
   jpa:
-    hibernate:
-      ddl-auto: true
+    database: MYSQL
     show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: none
 
 student:
   name: prod
   age: 18
+  address: HebeiProvice
   hobby: [work,play,study]
 

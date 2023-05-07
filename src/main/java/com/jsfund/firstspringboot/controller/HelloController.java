@@ -17,6 +17,9 @@ public class HelloController {
     @Value("${student.name}")
     private String name;
 
+    @Value("${student.address}")
+    private String address;
+
     @Autowired
     private ConfigProperties configProperties;
 
@@ -26,7 +29,7 @@ public class HelloController {
      */
     @RequestMapping(value = {"/hello","/hi"},method = RequestMethod.GET)
     public String say(){
-        return "Hello "+name+" SpringBoot3.0! Content: "+configProperties.toString();
+        return "Hello "+name+" address :"+address+" Content: "+configProperties.toString();
     }
 
 }

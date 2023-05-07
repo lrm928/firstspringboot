@@ -16,9 +16,8 @@ spring:
     hibernate:
       ddl-auto: none
 
-
-student :
+student:
   name: dev
-  age: 18
-  hobby: [eat,play,read]
-
+  age: 11
+  address: BeijingProvice
+  hobby: [yumaoqiu,play,study]

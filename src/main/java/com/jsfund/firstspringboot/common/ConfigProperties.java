@@ -21,6 +21,8 @@ public class ConfigProperties {
 
     private String name;
 
+    private String action;
+
     private int age;
 
     private List<String> hobby;
